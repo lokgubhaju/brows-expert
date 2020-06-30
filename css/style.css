@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+::selection{
+    background-color:rgb(240, 155, 207);
+    color: white;
+}
+*{
+    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.side-navbar{
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    padding-top: 20px;
+    z-index: 1;
+}
+.menu{
+    flex: 1;   
+}
+.menu .menu-icon .line{
+    width:25px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+.side-navbar .menu h5{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: none;
+}
+.side-navbar .menu a{
+    text-decoration: none;
+    color: black;
+}
+.side-navbar .menu .menu-icon{
+    padding: 20px;
+}
+.right-menu{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 1;
+}
+.slogan{
+    transform-origin: bottom;
+    flex: 3;
+}
+.sidebar-footer{
+    flex: 2;
+}
+.side-navbar .slogan p{
+    writing-mode: vertical-rl;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transform: rotate(-180deg); 
+}
+.sidebar-footer .social-media .fab{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 40px;
+}
+.side-navbar .menu,.side-navbar .slogan,.side-navbar .sidebar-footer,.headline-btn,.brow-main h5,.gallery .gallery-category .category p{
+    text-align: center;
+    text-transform: uppercase;
+}
+.right-menu .icons{
+    height: 50px;
+    width: 50px;
+}
+.right-menu .icons a{
+    text-decoration: none;
+    color: white;
+}
+.right-menu .icons:hover{
+    cursor: pointer;
+}
+.right-menu .icons:nth-child(1){
+    background-color: rgb(61, 58, 58);
+}
+.right-menu .icons:nth-child(2){
+    background-color: red;
+}
+.right-menu .icons:nth-child(3){
+    background-color: rgb(106, 197, 209);
+}
+.right-menu .icons:nth-child(4){
+    background-color: rgb(42, 188, 214);
+}
+header{
+    background: url(../img/headline.jpg) no-repeat;
+    height: 150vh;
+    margin-left: 100px;
+    padding-right: 50px;
+    background-size: 130%;
+    width: calc (100%- 200px);
+    position: relative;
+    background-position: center top;
+}
+header .header-menu{
+    position: absolute;
+    padding-top: 40px;
+    width: 100%;
+    padding-right:60px;
+}
+header .header-content{
+    position: absolute;
+}
+header .header-menu .info{
+    width: 50%;
+}
+header .header-menu .logo img{
+    margin-left: 10px;
+}
+header .header-menu .info h3{
+    color: rgb(124, 209, 243);
+}
+header .header-content .slider-img{
+    margin-top: 30%;
+    margin-right: 10px;
+}
+.headline-btn{
+    padding: 10px 40px;
+    border-radius: 60px;
+    background-color: rgb(240, 155, 207);
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.headline-btn:hover{
+    background: white;
+    color: black;
+    border:1px solid rgb(240, 155, 207);
+    transition: ease-in 0.5s;
+}
+header .header-content .headline-txt{
+    margin: 50px auto;
+    margin-left: 20%;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: end;
+}
+.brow-main{
+    text-align: center;
+    width: calc (100%- 200px);
+}
+.brow-main h5, .brow-main h1{
+    font-family: auto;
+    font-weight: bold;
+}
+.brow-main h5{
+    font-size: 18px;
+    color:rgb(240, 155, 207);
+}
+.brow-main p{
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+}
+.brow-main button{
+    margin: 40px 0 80px 0;
+}
+.feature .cover .cover1 img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+header2 .feature .cover .cover2{
+    background: url(../img/bg_home_03.jpg);
+    background-size: 100%;
+    height: 60vh;
+    width: 100%;
+}
+header2 .feature .cover .cover2 .row{
+    padding-top: 40px;
+}
+.feature-img{
+    margin-top: 10px;
+    padding-left: 28px;
+}
+header2 .feature .cover .cover2 .feature-content h4,.blog h4{
+    font-size: 30px;
+    font-family: auto;
+    text-transform: capitalize;
+}
+header2 .feature .feature-btn{
+    margin-top: 40px;
+}
+
+.gallery{
+    padding-left: 100px;
+    margin: 100px 0 35px 0;
+}
+.gallery p{
+    margin-bottom: 0;
+}
+.img-gallery,.testimonials,.services,.blog,header2{
+    padding-left: 100px;
+}
+.gallery h5,.testimonials .testimonial-headline h5,.services .services-headline h5{
+    text-transform: uppercase;
+    font-family: auto;
+    font-size: 18px;
+    color:rgb(240, 155, 207);
+    font-weight: bold;
+}
+.gallery  h1, .testimonials .testimonial-headline h1,.services .services-headline h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: auto;
+    margin: 0;
+}
+.gallery .gallery-category .category p{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.gallery .gallery-category .category p:hover,.gallery .gallery-category .category .active,.testimonials .testimonial-headline .testimonial-content h5,.services .services-grid p,.blog .blog-grid .blog-content a:hover{
+    color: rgb(240, 155, 207);
+}
+.gallery img,.testimonials .testimonial-headline img,.services .services-headline img{
+    margin: 20px auto;
+}
+.gallery .gallery-category .category a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #202020;
+}
+.achievements{
+    height: 200px;
+    background-color: #F4F6FA;
+}
+.achievements img{
+    padding: 10px;
+}
+.achievements h1{
+    font-weight: bold;
+    font-family: auto;
+    font-size: 55px;
+    margin-bottom: 0;
+}
+.achievements .row{
+    margin: 0;
+}
+.achievements h4,.testimonials .testimonial-headline h1,.testimonials .testimonial-grid .client-info h5,.img-gallery .gallery-grid .gallery-txt h4,.services .services-grid h4{
+    text-transform: capitalize;
+}
+.achievements .achievements-grid{
+    padding-top: 50px;
+}
+
+.img-gallery .gallery-grid{
+    position: relative;
+}
+
+.img-gallery .gallery-grid .gallery-txt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: auto;
+    background-image: linear-gradient(to right bottom, #a7edf4, #85dfff, #80ccff, #a0b2ff, #cd92f2);
+    visibility: hidden;
+    padding: 20px;
+    text-align: center;
+}
+.img-gallery .gallery-grid:hover .gallery-txt{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 0.95;
+}
+.img-gallery .gallery-grid .gallery-txt a{
+    text-decoration: none;
+    color: white;
+}
+.img-gallery .gallery-grid .gallery-txt h4{
+    font-weight: bold;
+    font-size: 30px;
+}
+.img-gallery .gallery-grid i{
+    margin-right: 10px;
+}
+.testimonials .testimonial-grid .client-info h6,.img-gallery .gallery-grid span,.services .services-grid p{
+    text-transform: uppercase;
+}
+.testimonials{
+    margin-top: 50px;
+}
+.testimonials .testimonial-grid .client-info h6{
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.testimonials .testimonial-grid .testimonial-img img{
+    border-radius: 50%;
+}
+.testimonials .testimonial-grid .testimonial-review{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.testimonials .testimonial-headline img{
+    margin-left: 0;
+}
+.testimonials p,.services .services-headline p{
+    width: 80%;
+    font-size: 15px;
+    line-height: 30px;
+}
+.testimonials .testimonial-grid .testimonial-review p{
+    width: 100%;
+} 
+.services{
+    background: url(../img/bg_home_03.jpg);
+    padding-top: 100px;
+    margin-top: 100px;
+    height: 150vh;
+}
+.services .services-headline p{
+    text-align: center;
+}
+.services .services-grid{
+    background: white;
+    height: 100%;
+    padding: 30px;
+}
+.services .services-grid img{
+    margin: 10px 0 30px 0;
+}
+.services .services-grid h1{
+    margin: 10px 0 20px 0;
+}
+.services .services-grid h4{
+    text-align: center;
+}
+.services .services-grid .button{
+    margin: 20px 0 20px 0;
+}
+.services .col-md-4:nth-child(n){
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.services .col-md-4:nth-child(2){
+    margin:0;
+}
+.blog .blog-grid{
+    position: relative;
+}
+.blog .blog-grid .blog-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: white;
+    
+}
+.blog .blog-grid:hover{
+    cursor: pointer;
+}
+.blog .blog-grid .blog-content h4{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+.blog .blog-grid .blog-content a{
+
+    text-decoration: none;
+    color: white;
+}
