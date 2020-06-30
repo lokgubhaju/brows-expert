@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
 ::selection{
     background-color:rgb(240, 155, 207);
     color: white;
@@ -7,7 +8,7 @@
     padding:0;
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato','Playfair Display', sans-serif;
 }
 .side-navbar{
     position: fixed;
@@ -62,7 +63,6 @@
 }
 .sidebar-footer .social-media .fab{
     text-decoration: none;
-    color: black;
     font-size: 18px;
     line-height: 40px;
 }
@@ -202,6 +202,9 @@ header2 .feature .feature-btn{
 .gallery p{
     margin-bottom: 0;
 }
+.gallery #gallery-txt{
+    width: 85%;
+}
 .img-gallery,.testimonials,.services,.blog,header2{
     padding-left: 100px;
 }
@@ -218,11 +221,14 @@ header2 .feature .feature-btn{
     font-family: auto;
     margin: 0;
 }
+.gallery .gallery-category{
+    margin-top: 25px;
+}
 .gallery .gallery-category .category p{
     font-weight: bold;
     letter-spacing: 2px;
 }
-.gallery .gallery-category .category p:hover,.gallery .gallery-category .category .active,.testimonials .testimonial-headline .testimonial-content h5,.services .services-grid p,.blog .blog-grid .blog-content a:hover{
+.gallery .gallery-category .category p:hover,.gallery .gallery-category .category .active,.testimonials .testimonial-headline .testimonial-content h5,.services .services-grid p,.blog .blog-grid .blog-content a:hover,.footer .footer-icons a:hover,.side-navbar .sidebar-footer .social-media .fab:hover,.footer .footer-details ul a:hover{
     color: rgb(240, 155, 207);
 }
 .gallery img,.testimonials .testimonial-headline img,.services .services-headline img{
@@ -244,12 +250,12 @@ header2 .feature .feature-btn{
     font-weight: bold;
     font-family: auto;
     font-size: 55px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 .achievements .row{
     margin: 0;
 }
-.achievements h4,.testimonials .testimonial-headline h1,.testimonials .testimonial-grid .client-info h5,.img-gallery .gallery-grid .gallery-txt h4,.services .services-grid h4{
+.achievements h5,.testimonials .testimonial-headline h1,.testimonials .testimonial-grid .client-info h5,.img-gallery .gallery-grid .gallery-txt h4,.services .services-grid h4,.footer .footer-details ul li,.footer h4{
     text-transform: capitalize;
 }
 .achievements .achievements-grid{
@@ -292,6 +298,9 @@ header2 .feature .feature-btn{
 .testimonials{
     margin-top: 50px;
 }
+.testimonials p,.achievements .achievements-grid h5,.gallery p,.feature .cover .cover2 p, header .brow-main p, header .info p, header .header-content .headline-txt p,.footer p,.footer span,.side-navbar .sidebar-footer .social-media .fab{
+    color: #616A72;
+}
 .testimonials .testimonial-grid .client-info h6{
     letter-spacing: 2px;
     font-size: 12px;
@@ -323,6 +332,7 @@ header2 .feature .feature-btn{
 }
 .services .services-headline p{
     text-align: center;
+    color: #616A72;
 }
 .services .services-grid{
     background: white;
@@ -333,10 +343,15 @@ header2 .feature .feature-btn{
     margin: 10px 0 30px 0;
 }
 .services .services-grid h1{
+    font-family: Playfair Display;
     margin: 10px 0 20px 0;
+    font-weight: bold;
+    font-size: 80px;
 }
-.services .services-grid h4{
+.services .services-grid h5{
     text-align: center;
+    line-height: 30px;
+    color: #616A72;
 }
 .services .services-grid .button{
     margin: 20px 0 20px 0;
@@ -357,6 +372,7 @@ header2 .feature .feature-btn{
     height: 100%;
     padding: 30px;
     color: white;
+    box-shadow: inset 0px -105px 71px -5px rgba(0,0,0,0.75);
     
 }
 .blog .blog-grid:hover{
@@ -368,7 +384,49 @@ header2 .feature .feature-btn{
     text-align: center;
 }
 .blog .blog-grid .blog-content a{
-
     text-decoration: none;
     color: white;
 }
+.footer{
+    margin: 50px auto;
+}
+.footer img{
+    width: 150px;
+    height: 50px;
+}
+.footer p{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.footer ul li{
+    display: block;
+    margin-bottom: 20px;
+}
+.footer ul li a{
+    color: #5E676F;
+}
+.footer ul li a:hover{
+    color: red;
+}
+.footer .footer-details h4, .footer ul h4{
+    margin-bottom: 30px;
+    font-family: auto;
+    font-weight: bold;
+}
+.footer .footer-details ul a{
+    text-decoration: none;
+    color: #5E676F;
+}
+.footer i{
+    margin-right: 15px;
+}
+.footer .col-md-3:nth-child(3){
+    font-size: 150px;
+}
+.footer .footer-icons a{
+    color: #5E676F;
+    margin-right: 20px;
+}
+.brow-main h5, .brow-main h1,.gallery h1,.achievements .achievements-grid h1,.testimonials .testimonial-headline h1,.services .services-headline h1,.side-navbar h5{
+    font-family: Playfair Display;
+} 
