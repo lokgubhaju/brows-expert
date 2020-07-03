@@ -16,7 +16,6 @@
     height: 100%;
     background-color: white;
     padding-top: 20px;
-    z-index: 1;
 }
 .menu{
     flex: 1;   
@@ -26,6 +25,16 @@
     height: 2px;
     margin-bottom: 5px;
     background-color: black;
+}
+.menu .menu-icon .line:last-child{
+    width: 15px;
+    transform: translateX(10px);
+}
+.side-navbar .menu:hover .line{
+    margin-left: 0;
+    width: 25px;
+    transform: translateX(0);
+    transition: 0.5s;
 }
 .side-navbar .menu h5{
     font-size: 12px;
@@ -39,11 +48,51 @@
 .side-navbar .menu .menu-icon{
     padding: 20px;
 }
-.right-menu{
-    position: fixed;
-    right: 0;
-    top: 30%;
-    z-index: 1;
+
+.menu-bar .logo img{
+    width: 200px;
+}
+.menu-bar .search-bar{
+    border: 1px solid rgb(216, 214, 214);
+    border-radius: 50px;
+    height: 60px;
+}
+.menu-bar .search-bar .fas{
+    right: 60px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+.menu-bar .search-bar input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    margin-left: 30px;
+    background: none;
+    width: 80%;
+}
+.no-outline{
+    outline: none;
+}
+.hover-menu{
+    margin: 30px auto;
+}
+.hover-menu ul li{
+    line-height: 30px;
+    font-weight: 500;
+    list-style: none;
+}
+.hover-menu h4{
+    font-weight: bold;
+}
+.hover-menu ul a{
+    color: black;
+    text-decoration: none;
+}
+.hover-footer{
+    margin: 30px auto;
 }
 .slogan{
     transform-origin: bottom;
@@ -70,9 +119,43 @@
     text-align: center;
     text-transform: uppercase;
 }
-.right-menu .icons{
+.right-menu{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 1;
+}
+
+.right-menu .icons {
+    margin-right: -150px;
+}
+.right-menu .icons:hover + .icons{
+    margin-right: 0;
+    transition: 0.5s;
+}
+.right-menu .icons i{ 
     height: 50px;
     width: 50px;
+}
+.right-menu .icons .icon-menu{
+    width: 150px;
+    color: white;
+    height: 50px;
+}
+.right-menu .icons #first{
+    background-color: #2B3244;
+}
+.right-menu .icons #second{
+    background-color: #BC2B44;
+}
+.right-menu .icons #third{
+    background-color: #5D9895;
+}
+.right-menu .icons #fourth{
+    background-color: #95B5A9;
+}
+.right-menu .icons .icon-menu p{
+    margin: 0;
 }
 .right-menu .icons a{
     text-decoration: none;
@@ -80,6 +163,14 @@
 }
 .right-menu .icons:hover{
     cursor: pointer;
+}
+.right-menu .icons .icons-txt{
+    visibility: hidden;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    padding: 20px;
+    background-color: red;
 }
 .right-menu .icons:nth-child(1){
     background-color: rgb(61, 58, 58);
@@ -196,14 +287,10 @@ header2 .feature .feature-btn{
 }
 
 .gallery{
-    padding-left: 100px;
     margin: 100px 0 35px 0;
 }
 .gallery p{
     margin-bottom: 0;
-}
-.gallery #gallery-txt{
-    width: 85%;
 }
 .img-gallery,.testimonials,.services,.blog,header2{
     padding-left: 100px;
@@ -228,7 +315,7 @@ header2 .feature .feature-btn{
     font-weight: bold;
     letter-spacing: 2px;
 }
-.gallery .gallery-category .category p:hover,.gallery .gallery-category .category .active,.testimonials .testimonial-headline .testimonial-content h5,.services .services-grid p,.blog .blog-grid .blog-content a:hover,.footer .footer-icons a:hover,.side-navbar .sidebar-footer .social-media .fab:hover,.footer .footer-details ul a:hover{
+.gallery .gallery-category .category p:hover,.gallery .gallery-category .category .active,.testimonials .testimonial-headline .testimonial-content h5,.services .services-grid p,.blog .blog-grid .blog-content a:hover,.footer .footer-icons a:hover,.side-navbar .sidebar-footer .social-media .fab:hover,.footer .footer-details ul a:hover,.menu-bar a:hover,.hover-menu a:hover,.hover-menu ul .active{
     color: rgb(240, 155, 207);
 }
 .gallery img,.testimonials .testimonial-headline img,.services .services-headline img{
@@ -255,7 +342,7 @@ header2 .feature .feature-btn{
 .achievements .row{
     margin: 0;
 }
-.achievements h5,.testimonials .testimonial-headline h1,.testimonials .testimonial-grid .client-info h5,.img-gallery .gallery-grid .gallery-txt h4,.services .services-grid h4,.footer .footer-details ul li,.footer h4{
+.achievements h5,.testimonials .testimonial-headline h1,.testimonials .testimonial-grid .client-info h5,.img-gallery .gallery-grid .gallery-txt h4,.services .services-grid h4,.footer .footer-details ul li,.footer h4,.hover-menu ul li,.hover-footer p{
     text-transform: capitalize;
 }
 .achievements .achievements-grid{
@@ -292,7 +379,7 @@ header2 .feature .feature-btn{
 .img-gallery .gallery-grid i{
     margin-right: 10px;
 }
-.testimonials .testimonial-grid .client-info h6,.img-gallery .gallery-grid span,.services .services-grid p{
+.testimonials .testimonial-grid .client-info h6,.img-gallery .gallery-grid span,.services .services-grid p,.hover-menu h4{
     text-transform: uppercase;
 }
 .testimonials{
@@ -429,4 +516,36 @@ header2 .feature .feature-btn{
 }
 .brow-main h5, .brow-main h1,.gallery h1,.achievements .achievements-grid h1,.testimonials .testimonial-headline h1,.services .services-headline h1,.side-navbar h5{
     font-family: Playfair Display;
+}
+.gototop{
+    height: 50px;
+    position: fixed;
+    width: 50px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    background-color: rgb(240, 155, 207);
+
+}
+.gototop i{
+    text-decoration: none;
+    color: white;
+}
+.gototop:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+@media (min-width:768px) and (max-width:1024px){
+    header .header-menu .logo img{
+        width: 150px;
+    }
+    header .header-menu .info p{
+        font-size: 12px;
+    }
+    header .header-menu .info h3{
+        font-size: 15px;
+    }
+    header{
+        margin-left: 50px;
+    }
 } 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brows Expert</title>
+    <title>Brows Expert | Home</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,13 +11,13 @@
 <body>
     <div class="side-navbar d-flex flex-column justify-content-between">
         <div class="menu">
-            <a href="#">
-                <div class="menu-icon d-flex flex-column align-items-center">
+            <div class="menu-icon d-flex flex-column align-items-center">
+                <a href="#">
                     <div class="line"></div>
                     <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </a>
+                    <div class="line"></div>    
+                </a>
+            </div>
             <a href="#"><h5>menu</h5></a>
         </div>
         <div class="slogan">
@@ -39,17 +39,21 @@
         </div>
     </div>
     <div class="right-menu">
-        <div class="icons d-flex justify-content-center align-items-center">
-            <a href="#"><i class="fas fa-desktop"></i></a>
+        <div class="icons d-flex">
+            <a href="#"><i class="fas fa-desktop d-flex justify-content-center align-items-center"></i></a>
+            <div class="icon-menu d-flex justify-content-center align-items-center" id="first"><p>more products</p></div>
         </div>
-        <div class="icons d-flex justify-content-center align-items-center">
-            <a href="#"><i class="fab fa-opencart"></i></a>
+        <div class="icons d-flex">
+            <a href="#"><i class="fab fa-opencart d-flex justify-content-center align-items-center"></i></a>
+            <div class="icon-menu d-flex justify-content-center align-items-center" id="second"><p>more products</p></div>
         </div>
-        <div class="icons d-flex justify-content-center align-items-center">
-            <a href="#"><i class="fas fa-life-ring"></i></a>
+        <div class="icons d-flex">
+            <a href="#"><i class="fas fa-life-ring d-flex justify-content-center align-items-center"></i></a>
+            <div class="icon-menu d-flex justify-content-center align-items-center" id="third">more products</div>
         </div>
-        <div class="icons d-flex justify-content-center align-items-center">
-            <a href="#"><i class="far fa-comment-alt"></i></a>
+        <div class="icons d-flex">
+            <a href="#"><i class="far fa-comment-alt d-flex justify-content-center align-items-center"></i></a>
+            <div class="icon-menu d-flex justify-content-center align-items-center" id="fourth"><p>more products</p></div>
         </div>
     </div>
     <header>
@@ -57,10 +61,10 @@
             <div class="logo">
                 <a href="#"><img src="img/logo.png" width="200px" class="img-fluid" alt=""></a>
             </div>
-            <div class="info d-flex justify-content-between">
+            <div class="info d-flex justify-content-around">
                 <p>A: 3105 Fairmount Ave, San Diego, CA 92105</p>
                 <h3>800-325-6678</h3>
-            </div>
+            </div>  
         </div>
         <div class="col-md-6 offset-6">
             <div class="header-content">
@@ -91,7 +95,7 @@
         <div class="feature">
             <div class="cover">
                 <div class="cover1">
-                    <img src="img/img_video_bg.jpg" alt="">
+                    <a href="#"><img src="img/img_video_bg.jpg" alt=""></a>
                 </div>
                 <div class="cover2">
                     <div class="container">
@@ -478,6 +482,94 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <div class="menu-bar">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo"><img src="img/logo.png" alt=""></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="search-bar d-flex align-items-center">
+                        <input type="text" class="no-outline" placeholder="tap here to start searching....">
+                        <a href="#" class="fas fa-search"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hover-menu">
+            <div class="row">
+                <div class="col-md-2 d-flex justify-content-center">
+                    <ul>
+                        <a href="#"><h4>home</h4></a>
+                        <a href="#"><li class="active">home default</li></a>
+                        <a href="#"><li>home video</li></a>
+                        <a href="#"><li>home services</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <ul>
+                        <a href="#"><h4>services</h4></a>
+                        <a href="#"><li>service</li></a>
+                        <a href="#"><li>single service</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <ul>
+                        <a href="#"><h4>gallery</h4></a>
+                        <a href="#"><li>grid gallery</li></a>
+                        <a href="#"><li>masonry gallery</li></a>
+                        <a href="#"><li>packery gallery</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <ul>
+                        <a href="#"><h4>blog</h4></a>
+                        <a href="#"><li>fullwidth listing</li></a>
+                        <a href="#"><li>with right sidebar</li></a>
+                        <a href="#"><li>with left sidebar</li></a>
+                        <a href="#"><li>posts</li></a>
+                        <ul>
+                            <a href="#"><li>standart post</li></a>
+                            <a href="#"><li>image post</li></a>
+                            <a href="#"><li>video post</li></a>
+                            <a href="#"><li>audio post</li></a>
+                            <a href="#"><li>link post</li></a>
+                            <a href="#"><li>quote post</li></a>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <ul>
+                        <a href="#"><h4>pages</h4></a>
+                        <a href="#"><li>about us</li></a>
+                        <a href="#"><li>shop</li></a>
+                        <ul>
+                            <a href="#"><li>all posts</li></a>
+                            <a href="#"><li>single product</li></a>
+                        </ul>
+                        <a href="#"><li>appointment</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                        <a href="#"><li>typography</li></a>
+                        <a href="#"><li>404 page</li></a>
+                        <a href="#"><li>coming soon</li></a>
+                        <a href="#"><li>shortcodes</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-flex justify-content-center">
+                    <ul>
+                        <a href="#"><h4>contacts</h4></a>
+                        <a href="#"><li>contacts</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hover-footer">
+            <p>copyright &copy; 2020 <b>Brow Expert</b>. all rights reserved</p>
+        </div>
+    </div>
+    <div class="gototop d-flex justify-content-center align-items-center">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
     </div>
 </body>
 </html>
