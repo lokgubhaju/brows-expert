@@ -13,8 +13,6 @@
 .side-navbar{
     position: fixed;
     width: 100px;
-    left: 100px;
-    margin-left: -100px;
     height: 100%;
     z-index: 2;
     background-color: white;
@@ -51,14 +49,13 @@
     background-color: black;
     transition: ease-in-out 0.3s;
 }
-.img-gallery,.testimonials,.services,.blog,header2{
+.img-gallery,.blog{
     padding-left: 100px;
 }
 
 .side-navbar .menu h5{
     font-size: 12px;
     font-weight: bold;
-    font-family: none;
 }
 .side-navbar .menu a{
     text-decoration: none;
@@ -226,24 +223,22 @@
 header{
     background: url(../img/headline.jpg) no-repeat;
     height: 150vh;
-    margin-left: 100px;
     padding-right: 50px;
     background-size: 130%;
-    width: calc (100%- 200px);
     position: relative;
     background-position: center top;
 }
 header .header-menu{
     position: absolute;
-    padding-top: 40px;
     width: 100%;
-    padding-right:60px;
+    padding: 40px 60px 0 100px;
 }
 header .header-content{
     position: absolute;
 }
 header .header-menu .info{
     width: 50%;
+    font-weight: bold;
 }
 header .header-menu .logo img{
     margin-left: 10px;
@@ -280,10 +275,9 @@ header .header-content .headline-txt{
 }
 .brow-main{
     text-align: center;
-    width: calc (100%- 200px);
+    margin-top: 50px;
 }
 .brow-main h5, .brow-main h1{
-    font-family: auto;
     font-weight: bold;
 }
 .brow-main h5{
@@ -318,7 +312,6 @@ header2 .feature .cover .cover2 .row{
 }
 header2 .feature .cover .cover2 .feature-content h4,.blog h4{
     font-size: 30px;
-    font-family: auto;
     text-transform: capitalize;
 }
 header2 .feature .feature-btn{
@@ -334,7 +327,6 @@ header2 .feature .feature-btn{
 
 .gallery h5,.testimonials .testimonial-headline h5,.services .services-headline h5{
     text-transform: uppercase;
-    font-family: auto;
     font-size: 18px;
     color:rgb(240, 155, 207);
     font-weight: bold;
@@ -342,7 +334,6 @@ header2 .feature .feature-btn{
 .gallery  h1, .testimonials .testimonial-headline h1,.services .services-headline h1{
     text-transform: capitalize;
     font-weight: bold;
-    font-family: auto;
     margin: 0;
 }
 .gallery .gallery-category{
@@ -372,7 +363,6 @@ header2 .feature .feature-btn{
 }
 .achievements h1{
     font-weight: bold;
-    font-family: auto;
     font-size: 55px;
     margin-bottom: 10px;
 }
@@ -394,7 +384,6 @@ header2 .feature .feature-btn{
     position: absolute;
     width: 100%;
     height: 100%;
-    font-family: auto;
     background-image: linear-gradient(to right bottom, #a7edf4, #85dfff, #80ccff, #a0b2ff, #cd92f2);
     visibility: hidden;
     padding: 20px;
@@ -534,7 +523,6 @@ header2 .feature .feature-btn{
 }
 .footer .footer-details h4, .footer ul h4{
     margin-bottom: 30px;
-    font-family: auto;
     font-weight: bold;
 }
 .footer .footer-details ul a{
@@ -574,16 +562,79 @@ header2 .feature .feature-btn{
     background-color: grey;
 }
 @media (min-width:768px) and (max-width:1024px){
+    header .header-menu{
+        padding: 40px 50px 0 0;
+    }
     header .header-menu .logo img{
         width: 150px;
+        margin-left: 50px;
     }
     header .header-menu .info p{
-        font-size: 12px;
+        font-size: 13px;
     }
     header .header-menu .info h3{
-        font-size: 15px;
+        font-size: 25px;
     }
     header{
         margin-left: 50px;
+        height: 120vh;
     }
+    .brow-main,.testimonials,.footer{
+        margin-left: 80px;
+        margin-right: 50px;
+    }
+    .brow-main p{
+        margin-top: 20px;
+    }
+    .feature .cover .cover1 img{
+        height: 400px;
+    }
+    header2 .feature .cover .cover2{
+        padding-left: 80px;
+        padding-right: 50px;
+        height: 80vh;
+    }
+    .gallery{
+        margin-left: 80px;
+    }
+    .gallery .gallery-category .category p{
+        font-size: 13px;
+    }
+    .img-gallery,.blog{
+        padding-left: 80px;
+    }
+    .side-navbar{
+        width: 80px;
+    }
+    .achievements img{
+        height: 90px;
+        width: 90px;
+    }
+    .achievements h1{
+        font-size: 40px;
+    }
+    .services{
+        margin-top: 50px;
+        padding: 50px 50px 50px 80px;
+    }
+    .services .services-grid{
+        height: 95%;
+    }
+    .services .services-grid img,.services .services-grid h1,.services .services-grid p,.services .services-grid .button{
+        margin: 10px auto;
+    }
+    .overlay{
+        padding: 0 50px 20px 80px;
+    }
+    .overlay .overlay-menu{
+    margin-top: 20px;
+    }
+    .hover-menu{
+        margin-bottom: 0;
+    }
+    .hover-footer{
+        margin: 0;
+    }
+}  
+    
 } 
