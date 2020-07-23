@@ -223,6 +223,7 @@
 header{
     background: url(../img/headline.jpg) no-repeat;
     height: 150vh;
+    width: 100%;
     padding-right: 50px;
     background-size: 130%;
     position: relative;
@@ -442,6 +443,7 @@ header2 .feature .feature-btn{
     padding-top: 100px;
     margin-top: 100px;
     height: 150vh;
+    width: 100%;    
 }
 .services .services-headline p{
     text-align: center;
@@ -552,7 +554,6 @@ header2 .feature .feature-btn{
     background-color: rgb(240, 155, 207);
 
 }
-  
 .gototop i{
     text-decoration: none;
     color: white;
@@ -561,7 +562,95 @@ header2 .feature .feature-btn{
     cursor: pointer;
     background-color: grey;
 }
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:481px) and (max-width:768px){
+    .side-navbar{
+        width: 60px;
+    }
+    .side-navbar .slogan p{
+        font-size: 13px;
+    }
+    header{
+        margin-left: 50px;
+        height: 80vh;
+    }
+    header .header-menu{
+        padding: 40px 0 0 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    header .header-menu .logo{
+        width: 150px;
+    }
+    header .header-menu .info p{
+        font-size: 12px;
+    }
+    header .header-menu .info h3{
+        font-size: 18px;
+    }
+    header .header-content .headline-txt{
+        margin: 30px 0;
+    }
+    header .header-content .headline-txt p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    header .header-content .buttons .headline-btn{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .brow-main{
+        margin-left: 50px;
+    }
+    .brow-main p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .brow-main button{
+        margin: 20px 0;
+    }
+    header2{
+        margin-left: 50px;
+    }
+    header2 .feature .cover .cover1 img{
+        height: 350px;
+        margin-left: 50px;
+    }
+    header2 .feature .cover2{
+        margin-left: 50px;
+        height: 80vh;
+    }
+    header2 .feature .cover .cover2 .feature-img img{
+        width: 40px;
+    }
+    header2 .feature .cover .cover2 .feature-content h4{
+        font-size: 25px;
+    }
+
+    header2 .feature .cover .cover2 .row {
+        padding-top: 20px;
+    }
+    header2 .feature .feature-btn {
+        margin-top: 0;
+    }
+    header2 .feature .cover .cover2{
+        height: 70vh;
+    }
+    .gallery{
+        margin-left: 50px;
+    }
+    .gallery .gallery-category .category p{
+        font-size: 10px;
+    }
+    .gallery .gallery-category .button .headline-btn{
+        font-size: 8px;
+        padding: 10px;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    header{
+        margin-left: 80px;
+        height: 120vh;
+    }
     header .header-menu{
         padding: 40px 50px 0 0;
     }
@@ -575,13 +664,8 @@ header2 .feature .feature-btn{
     header .header-menu .info h3{
         font-size: 25px;
     }
-    header{
-        margin-left: 50px;
-        height: 120vh;
-    }
-    .brow-main,.testimonials,.footer{
+    .brow-main,header2 .feature .cover .cover1 img,.testimonials,.footer{
         margin-left: 80px;
-        margin-right: 50px;
     }
     .brow-main p{
         margin-top: 20px;
@@ -590,11 +674,12 @@ header2 .feature .feature-btn{
         height: 400px;
     }
     header2 .feature .cover .cover2{
-        padding-left: 80px;
+        margin-left: 80px;
         padding-right: 50px;
         height: 80vh;
     }
     .gallery{
+        margin-top: 50px;
         margin-left: 80px;
     }
     .gallery .gallery-category .category p{
@@ -623,6 +708,15 @@ header2 .feature .feature-btn{
     .services .services-grid img,.services .services-grid h1,.services .services-grid p,.services .services-grid .button{
         margin: 10px auto;
     }
+    .services .services-grid h5{
+        font-size: 15px;
+    }
+    .blog .blog-grid .blog-content h4{
+        font-size: 25px;
+    }
+    .blog .blog-grid .blog-content p{
+        font-size: 15px;
+    }
     .overlay{
         padding: 0 50px 20px 80px;
     }
@@ -635,6 +729,4 @@ header2 .feature .feature-btn{
     .hover-footer{
         margin: 0;
     }
-}  
-    
 } 
