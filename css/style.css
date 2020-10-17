@@ -261,6 +261,9 @@ header .header-content .slider-img{
     margin-left: 20px;
     font-size: 15px;
 }
+.headline-btn:focus{
+    outline: none;
+}
 .headline-btn:hover{
     background: white;
     color: black;
@@ -544,24 +547,48 @@ header2 .feature .feature-btn{
 .brow-main h5, .brow-main h1,.gallery h1,.achievements .achievements-grid h1,.testimonials .testimonial-headline h1,.services .services-headline h1,.side-navbar h5{
     font-family: Playfair Display;
 }
-.gototop{
+button{
+    border: none;
+}
+.scroll {
+    cursor: pointer;
+    width: 50px;
     height: 50px;
     position: fixed;
-    width: 50px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 50px;
+    right: -80px;
     border-radius: 50%;
     background-color: rgb(240, 155, 207);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 0px #888;
+    transition: 300ms;
+  }
+  .scroll:hover{
 
-}
-.gototop i{
-    text-decoration: none;
-    color: white;
-}
-.gototop:hover{
-    cursor: pointer;
     background-color: grey;
-}
+  }
+  
+  .scroll:hover i {
+    animation-name: rotate;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes rotate {
+    from {margin-top: 15px}
+    to {margin-top: 5px}
+  }
+  
+  .visible {
+    right: 30px;
+    transition: all 400ms;
+    transform: rotate(360deg)
+  }
+
 @media (min-width:481px) and (max-width:768px){
     .side-navbar{
         width: 60px;
