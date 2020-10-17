@@ -12,6 +12,15 @@ menuBtn.addEventListener('click',() => {
         document.getElementById("menu-txt").innerHTML = "menu";
     }
 });
+function myFunction(){
+  var x = document.getElementById("myNav");
+  if(x.style.display === "block"){
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 window.addEventListener('scroll', e => {
   var el = document.getElementById('jsScroll');
   if(window.scrollY > 200) {
