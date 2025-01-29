@@ -13,7 +13,7 @@
     <img src ="./img/screencapture.png" width="900px">
 </a>
 
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy").
+My favorite Browser is [Brave](https://brave.com "The best browser in the world").
 
 [`love`] & [`code`](#code)
 
